@@ -22,7 +22,7 @@ const server = new GraphQLServer({
     ...req,
     db: new Prisma({
       typeDefs: 'src/generated/prisma.graphql',
-      endpoint: 'https://eu1.prisma.sh/max-eremin-df46a6/database/dev?headers={"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NDM1ODEwMDMsIm5iZiI6MTU0MzQ5NDYwM30.SagYpFgzYkhmDFNfgJDzfVMWQOncoUP4q0CWZbbPoDM"}',
+      endpoint: 'SECRET',
       secret: 'mysecret123',
       debug: true
     }),
